@@ -60,9 +60,9 @@
 	returnbutton.onclick = function(){
 		window.location.href="https://hwigyeonglee.github.io/week10/";
 	}
-	sessionStorage.getItem('YEAR');
-	sessionStorage.getItem('MONTH');
-	document.getElementById("presentTime").innerHTML = 'YEAR'+"년 "+'MONTH'+"월의 인기가요";
+	var d = sessionStorage.getItem('YEAR');
+	var e = sessionStorage.getItem('MONTH');
+	document.getElementById("presentTime").innerHTML = " " + d+"년 "+e+"월의 인기가요";
 	sessionStorage.clear();
 		
 	</script>
