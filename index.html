@@ -44,7 +44,7 @@
 	
 
 	<div id="container">
-		<div id="returnbutton">X</div>
+		<div id="returnbutton">X<span id="presentTime"></span></div>
     	<div id="secondContainer">
     		<div id="left"></div>
 		<div id="thirdContainer">
@@ -60,6 +60,11 @@
 	returnbutton.onclick = function(){
 		window.location.href="https://hwigyeonglee.github.io/week10/";
 	}
+	sessionStorage.getItem('YEAR');
+	sessionStorage.getItem('MONTH');
+	document.getElementById("presentTime").innerHTML = 'YEAR'+"년 "+'MONTH'+"월의 인기가요";
+	sessionStorage.clear();
+		
 	</script>
 
 </body>
