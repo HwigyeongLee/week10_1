@@ -15,7 +15,7 @@
 		#returnbutton{height:15vh;
 				font-size:40px ;
 				font-family: 'Galmuri11';
-				font-weight: 700;
+				font-weight: 400;
 				color: black;
 				padding-left: calc(15vw + 10px);
 				line-height:240px;}
@@ -60,8 +60,10 @@
 	returnbutton.onclick = function(){
 		window.location.href="https://hwigyeonglee.github.io/week10/";
 	}
-	var d = localStorage.getItem('YEAR');
-	var e = localStorage.getItem('MONTH');
+	localStorage.getItem('YEAR');
+	localStorage.getItem('MONTH');
+	var a = 'YEAR';
+	var b = 'MONTH';
 	document.getElementById("presentTime").innerHTML = " " + d +"년 "+ e +"월의 인기가요";
 	localStorage.clear();
 		
