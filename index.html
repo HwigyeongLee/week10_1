@@ -67,11 +67,22 @@
 	returnbutton.onclick = function(){
 		window.location.href="https://hwigyeonglee.github.io/week10/";
 	}
+		
+	let a = window.location.href;
+	console.log(a);
+		
+	let b = a.split("&");
+	console.log(b);
 	
-	document.getElementById("presentTime").innerHTML = " " + "YYYY" +"년 "+ "MM" +"월의 인기가요";
+	let c = b[3];  //year
+	let d = b[4];  //month
+
+	let e = c.split("=")[1];
+	let f = d.split("=")[1];
+
+	document.getElementById("presentTime").innerHTML = " " + e +"년 "+ f +"월의 인기가요";
 	var link = window.location.href;
 	console.log(link);
-		
 		
 	</script>
 
